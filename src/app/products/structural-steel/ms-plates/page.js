@@ -11,6 +11,6 @@ const products = [
 
 export default function MSPlatesPage() {
     return (
-        <ProductListing title="MS Plates & Sheets" description="Structural steel plates and sheets in HR, CR, GP, GC, and specialty profiles for construction and fabrication." benefits={['IS 2062 Certified', 'All Thicknesses', 'Custom Cutting', 'Delivery Available']} products={products} categoryBackLink="/products" />
+        <ProductListing title="MS Plates & Sheets" description="Structural steel plates and sheets in HR, CR, GP, GC, and specialty profiles for construction and fabrication." benefits={['IS 2062 Certified', 'All Thicknesses', 'Standard Sizes Available', 'Delivery Available']} products={products} categoryBackLink="/products" />
     );
 }

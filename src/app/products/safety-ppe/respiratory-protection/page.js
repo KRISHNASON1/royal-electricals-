@@ -30,7 +30,7 @@ export default function RespiratoryProtectionPage() {
 
     const benefits = [
         'NIOSH / EN Approved',
-        'Fit Testing Support',
+        'Multiple Sizes',
         'Wide Range of Filters',
         'Comfortable Designs'
     ];

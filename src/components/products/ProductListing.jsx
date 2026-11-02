@@ -67,7 +67,7 @@ export default function ProductListing({ title, description, benefits, products,
                             <div className={`h-64 overflow-hidden relative flex items-center justify-center ${fitImages || product.fitImage ? 'bg-white' : 'bg-gray-100'}`}>
                                 <Image
                                     src={product.image || '/images/Products_preview/PowerTools&HandTools.jpg'}
-                                    alt={`${product.name} - industrial fabrication and engineering component`}
+                                    alt={`${product.name} - supplied by Royal Electricals & Hardware`}
                                     fill
                                     className={`${fitImages || product.fitImage ? 'object-contain group-hover:scale-125' : 'object-cover group-hover:scale-110'} transition-transform duration-500`}
                                 />
@@ -127,11 +127,11 @@ export default function ProductListing({ title, description, benefits, products,
                     <div className="relative z-10">
                         <h2 className="text-3xl font-bold mb-4">Download Full Catalog</h2>
                         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                            Get detailed specifications, sizing charts, and complete product range in our downloadable brochure.
+                            Explore Royal Electricals &amp; Hardware's product range and contact details in our downloadable catalogue.
                         </p>
                         <a
-                            href="/MEGA-Enterprise-Catalog.pdf"
-                            download="MEGA-Enterprise-Catalog.pdf"
+                            href="/Royal-Electricals-Catalog.pdf"
+                            download="Royal-Electricals-Catalog.pdf"
                             className="inline-flex items-center px-8 py-4 bg-white text-primary-900 rounded-full font-bold hover:bg-gray-100 transition-colors"
                         >
                             <Download className="w-5 h-5 mr-2" />

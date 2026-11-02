@@ -10,6 +10,6 @@ const products = [
 
 export default function MSAnglesPage() {
     return (
-        <ProductListing title="MS Angles" description="Mild steel angles in all sizes and grades for structural, fabrication, and construction applications." benefits={['IS 2062 Certified', 'All Sizes', 'Mill TC Available', 'Cutting Service']} products={products} categoryBackLink="/products" />
+        <ProductListing title="MS Angles" description="Mild steel angles in all sizes and grades for structural, fabrication, and construction applications." benefits={['IS 2062 Certified', 'All Sizes', 'Mill TC Available', 'Standard Lengths']} products={products} categoryBackLink="/products" />
     );
 }

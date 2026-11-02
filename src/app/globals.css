@@ -19,24 +19,24 @@
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --primary: 43 68% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 2 56% 51%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 44 32% 95%;
+    --muted-foreground: 0 0% 38%;
+    --accent: 45 75% 94%;
+    --accent-foreground: 0 0% 12%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --ring: 43 68% 38%;
+    --chart-1: 43 68% 38%;
+    --chart-2: 0 68% 45%;
+    --chart-3: 33 35% 31%;
+    --chart-4: 45 75% 68%;
+    --chart-5: 7 52% 56%;
     --radius: 0.5rem;
   }
 
@@ -47,10 +47,10 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --primary: 43 68% 48%;
     --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 2 56% 51%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
     --accent: 0 0% 14.9%;
@@ -60,11 +60,11 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 43 68% 58%;
+    --chart-2: 0 68% 60%;
+    --chart-3: 33 45% 62%;
+    --chart-4: 45 75% 72%;
+    --chart-5: 7 52% 65%;
   }
 }
 
@@ -93,12 +93,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7AB2D3;
+  background: #B68B22;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4A628A;
+  background: #8E1B24;
 }
 
 /* Thin scrollbar for Products dropdown */
@@ -174,7 +174,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(to right, #7AB2D3, #4A628A);
+  background: linear-gradient(to right, #B68B22, #C8423D);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -195,8 +195,8 @@ body {
       rgba(255, 255, 255, 0.15) 0%,
       rgba(255, 255, 255, 0.08) 100%);
   box-shadow:
-    0 8px 32px 0 rgba(31, 38, 135, 0.2),
-    0 4px 16px 0 rgba(31, 38, 135, 0.15),
+    0 8px 32px 0 rgba(142, 107, 24, 0.2),
+    0 4px 16px 0 rgba(142, 107, 24, 0.15),
     inset 0 1px 2px 0 rgba(255, 255, 255, 0.4),
     inset 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -233,25 +233,25 @@ body {
         rgba(255, 255, 255, 0.3) 0%,
         rgba(255, 255, 255, 0.2) 100%);
     box-shadow:
-      0 8px 32px 0 rgba(31, 38, 135, 0.25),
+      0 8px 32px 0 rgba(142, 107, 24, 0.25),
       inset 0 1px 2px 0 rgba(255, 255, 255, 0.5);
   }
 }
 
 /* Selection color */
 ::selection {
-  background-color: #7AB2D3;
-  color: white;
+  background-color: #B68B22;
+  color: #fff;
 }
 
 ::-moz-selection {
-  background-color: #7AB2D3;
-  color: white;
+  background-color: #B68B22;
+  color: #fff;
 }
 
 /* Focus visible */
 *:focus-visible {
-  outline: 2px solid #7AB2D3;
+  outline: 2px solid #B68B22;
   outline-offset: 2px;
 }
 

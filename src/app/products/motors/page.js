@@ -9,7 +9,7 @@ export default function MotorsPage() {
             name: 'Induction Motors',
             description: 'Three-phase squirrel cage induction motors for general industrial use.',
             icon: <Settings className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/motors/induction-motors',
         },
         {
@@ -23,21 +23,21 @@ export default function MotorsPage() {
             name: 'Brake Motors',
             description: 'Motors with integrated electromagnetic brakes for quick stopping.',
             icon: <Fan className="w-8 h-8" />,
-            color: 'from-red-500 to-red-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/motors/brake-motors',
         },
         {
             name: 'Crane Duty Motors',
             description: 'Heavy-duty motors designed for crane and hoist applications.',
             icon: <Zap className="w-8 h-8" />,
-            color: 'from-orange-500 to-orange-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/motors/crane-duty-motors',
         },
         {
             name: 'Submersible Motors',
             description: 'Water-filled and oil-filled motors for pump applications.',
             icon: <Droplet className="w-8 h-8" />,
-            color: 'from-cyan-500 to-cyan-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/motors/submersible-motors',
         },
     ];
@@ -54,7 +54,7 @@ export default function MotorsPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-secondary-500 to-primary-600 rounded-3xl mb-6 shadow-lg">
                         <Settings className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -97,18 +97,18 @@ export default function MotorsPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-purple-900 to-purple-800 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-secondary-900 to-secondary-800 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Need Motor Selection Help?</h2>
-                        <p className="text-purple-200 mb-8 max-w-2xl mx-auto">
-                            Our engineers can help you select the right motor for your application based on load, duty cycle, and environment.
+                        <p className="text-secondary-200 mb-8 max-w-2xl mx-auto">
+                            Share your motor specifications, load, and duty requirements with our sales team to request product availability and pricing.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-secondary-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-all">
-                                Technical Consultation
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary-600 text-white rounded-full font-semibold hover:bg-secondary-700 transition-all">
+                                Request Product Quote
                             </Link>
                         </div>
                     </div>

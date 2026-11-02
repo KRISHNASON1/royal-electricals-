@@ -9,35 +9,35 @@ export default function WiresCablesPage() {
             name: 'Power Cables',
             description: 'High voltage and low voltage power transmission cables.',
             icon: <Zap className="w-8 h-8" />,
-            color: 'from-red-500 to-red-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/wires-cables/power-cables',
         },
         {
             name: 'Control Cables',
             description: 'Multi-core cables for instrumentation and control systems.',
             icon: <Cable className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/wires-cables/control-cables',
         },
         {
             name: 'Flexible Wires',
             description: 'Single and multi-strand flexible wiring solutions.',
             icon: <Plug className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/wires-cables/flexible-wires',
         },
         {
             name: 'Communication Cables',
             description: 'Data, networking, and telecommunication cables.',
             icon: <Radio className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/wires-cables/communication-cables',
         },
         {
             name: 'Building Wires',
             description: 'House wiring and electrical installation cables.',
             icon: <Building className="w-8 h-8" />,
-            color: 'from-orange-500 to-orange-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/wires-cables/building-wires',
         },
         {
@@ -66,7 +66,7 @@ export default function WiresCablesPage() {
 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-3xl mb-6 shadow-lg">
                         <Zap className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -121,22 +121,22 @@ export default function WiresCablesPage() {
 
                 {/* CTA Section */}
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Need Bulk Cable Supply?</h2>
-                        <p className="text-blue-200 mb-8 max-w-2xl mx-auto">
+                        <p className="text-primary-200 mb-8 max-w-2xl mx-auto">
                             We provide competitive pricing for project-based requirements. Get customized quotations for your electrical projects.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/products"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-gray-100 transition-all"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 rounded-full font-semibold hover:bg-gray-100 transition-all"
                             >
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-all"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all"
                             >
                                 Request Quote
                             </Link>

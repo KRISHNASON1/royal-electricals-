@@ -28,7 +28,7 @@ export default function SpecialtyLubricantsPage() {
         },
     ];
 
-    const benefits = ['Application Specific', 'Technical Support', 'Custom Formulation', 'Bulk Supply'];
+    const benefits = ['Application Specific', 'Technical Support', 'Multiple Grades', 'Bulk Supply'];
 
     return (
         <ProductListing

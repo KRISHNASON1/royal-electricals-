@@ -35,77 +35,77 @@ const StackingCardsShowcase = () => {
       id: 1,
       title: 'Power & Hand Tools',
       image: '/images/Products_preview/PowerTools&HandTools.jpg',
-      color: 'from-blue-500 to-blue-700',
+      color: 'from-primary-500 to-primary-700',
       link: '/products/hardware/power-hand-tools'
     },
     {
       id: 2,
       title: 'Lugs & Glands',
       image: '/images/Products_preview/Lugs&Glands.jpg',
-      color: 'from-cyan-500 to-cyan-700',
+      color: 'from-secondary-500 to-secondary-700',
       link: '/products/electrical/lugs-glands'
     },
     {
       id: 3,
       title: 'Switchgears',
       image: '/images/Products_preview/Switchgears.jpg',
-      color: 'from-yellow-500 to-yellow-700',
+      color: 'from-primary-500 to-primary-700',
       link: '/products/electrical/switchgears'
     },
     {
       id: 4,
       title: 'Tarpaulin',
       image: '/images/Products_preview/Tarpaulin.jpg',
-      color: 'from-red-500 to-red-700',
+      color: 'from-secondary-500 to-secondary-700',
       link: '/products/hardware/tarpaulin'
     },
     {
       id: 5,
       title: 'Nuts, Bolts & Fasteners',
       image: '/images/Products_preview/NutsBolts&Fasteners.jpg',
-      color: 'from-orange-500 to-orange-700',
+      color: 'from-primary-500 to-primary-700',
       link: '/products/hardware/fasteners'
     },
     {
       id: 6,
       title: 'Waterproofing',
       image: '/images/Products_preview/waterProofing.jpg',
-      color: 'from-purple-500 to-purple-700',
+      color: 'from-secondary-500 to-secondary-700',
       link: '/products/construction-chemicals/waterproofing'
     },
     {
       id: 7,
       title: 'Wood Coating',
       image: '/images/Products_preview/woodPainting.jpg',
-      color: 'from-orange-400 to-orange-600',
+      color: 'from-primary-400 to-primary-600',
       link: '/products/construction-chemicals/wood-coatings'
     },
     {
       id: 8,
       title: 'TMT Bars',
       image: '/images/Products_preview/TMTBars.jpg',
-      color: 'from-red-600 to-red-800',
+      color: 'from-secondary-600 to-secondary-800',
       link: '/products/structural-steel/tmt-bars'
     },
     {
       id: 9,
       title: 'Fall Protection',
       image: '/images/Products_preview/FallProtection.jpg',
-      color: 'from-yellow-600 to-amber-800',
+      color: 'from-primary-600 to-primary-800',
       link: '/products/safety-ppe/fall-protection'
     },
     {
       id: 10,
       title: 'Earth Moving Equipment',
       image: '/images/Products_preview/EarthMovingEquipment.jpg',
-      color: 'from-indigo-500 to-indigo-700',
+      color: 'from-primary-500 to-primary-700',
       link: '/products/construction-equipment/earth-moving'
     },
     {
       id: 11,
       title: 'CPVC Pipes & Fittings',
       image: '/images/Products_preview/CPVCPipes&Fittings.jpg',
-      color: 'from-pink-500 to-pink-700',
+      color: 'from-secondary-500 to-secondary-700',
       link: '/products/pipes-fittings/cpvc'
     },
     {
@@ -303,22 +303,22 @@ const StackingCardsShowcase = () => {
             if (isMobile || isUnmountingRef.current) return;
 
             if (exploreButtonRef.current) {
-              const blueGlowElement = exploreButtonRef.current.querySelector('.blue-glow');
+              const accentGlowElement = exploreButtonRef.current.querySelector('.accent-glow');
               const glowElement = exploreButtonRef.current.querySelector('.button-glow');
 
-              // Create a timeline to sync button scale with blue glow
+              // Create a timeline to sync button scale with accent glow
               const pulseTimeline = gsap.timeline();
 
-              // Button pulse and blue glow appear together
+              // Button pulse and accent glow appear together
               pulseTimeline.to(exploreButtonRef.current, {
                 scale: 1.15,
                 duration: 0.4,
                 ease: 'power2.inOut',
               }, 0);
 
-              // Blue glow appears as button scales up
-              if (blueGlowElement) {
-                pulseTimeline.to(blueGlowElement, {
+              // Accent glow appears as button scales up
+              if (accentGlowElement) {
+                pulseTimeline.to(accentGlowElement, {
                   opacity: 0.5,
                   duration: 0.2,
                   ease: 'power2.inOut',
@@ -341,16 +341,16 @@ const StackingCardsShowcase = () => {
                 ease: 'power2.inOut',
               });
 
-              // Blue glow fades but stays visible
-              if (blueGlowElement) {
-                pulseTimeline.to(blueGlowElement, {
+              // Accent glow fades but stays visible
+              if (accentGlowElement) {
+                pulseTimeline.to(accentGlowElement, {
                   opacity: 0.5,
                   duration: 0.4,
                   ease: 'power2.inOut',
                   onComplete: () => {
                     // Then continuous subtle pulsing
-                    if (!isUnmountingRef.current && blueGlowElement) {
-                      gsap.to(blueGlowElement, {
+                    if (!isUnmountingRef.current && accentGlowElement) {
+                      gsap.to(accentGlowElement, {
                         opacity: 0.5,
                         duration: 1,
                         yoyo: true,
@@ -598,7 +598,7 @@ const StackingCardsShowcase = () => {
       <div
         ref={backgroundLinesRef}
         className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block"
-        style={{ backgroundColor: '#f2f5ee' }}
+        style={{ backgroundColor: '#FBF8EC' }}
       >
         <img
           src="/background.png"
@@ -612,7 +612,7 @@ const StackingCardsShowcase = () => {
       <div
         ref={mobileBackgroundRef}
         className="absolute inset-0 overflow-hidden pointer-events-none md:hidden"
-        style={{ backgroundColor: '#f2f5ee' }}
+        style={{ backgroundColor: '#FBF8EC' }}
       >
         <img
           src="/mobileBackgound1.png"
@@ -625,7 +625,7 @@ const StackingCardsShowcase = () => {
       {/* Animated Background — hidden on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <div className="absolute top-1/3 -left-48 w-96 h-96 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute top-2/3 -right-48 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 -right-48 w-96 h-96 bg-secondary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="relative h-screen flex items-start justify-center px-4 sm:px-6 lg:px-8 pt-[168px] md:pt-72">
@@ -696,8 +696,8 @@ const StackingCardsShowcase = () => {
               ref={exploreButtonRef}
               className="pointer-events-auto group relative"
             >
-              {/* Blue glow - continuous pulsing — desktop only */}
-              <div className="blue-glow hidden md:block absolute -inset-2 bg-blue-500 rounded-full opacity-0 blur-2xl transition-all duration-300 group-hover:opacity-70 group-hover:blur-3xl"></div>
+              {/* Accent glow - continuous pulsing — desktop only */}
+              <div className="accent-glow hidden md:block absolute -inset-2 bg-primary-500 rounded-full opacity-0 blur-2xl transition-all duration-300 group-hover:opacity-70 group-hover:blur-3xl"></div>
 
               {/* Animated glow background — desktop only */}
               <div className="button-glow hidden md:block absolute -inset-1 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-600 rounded-full opacity-0 blur-xl transition-all duration-300 group-hover:opacity-100 animate-gradient-xy"></div>

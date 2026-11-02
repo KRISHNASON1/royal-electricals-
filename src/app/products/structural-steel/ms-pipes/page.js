@@ -11,6 +11,6 @@ const products = [
 
 export default function MSPipesPage() {
     return (
-        <ProductListing title="MS Pipes & Tubes" description="Mild steel pipes and tubes in ERW, seamless, and hollow section profiles for structural, plumbing, and industrial applications." benefits={['IS Certified', 'All Sizes', 'Cutting Service', 'Bulk Supply']} products={products} categoryBackLink="/products" />
+        <ProductListing title="MS Pipes & Tubes" description="Mild steel pipes and tubes in ERW, seamless, and hollow section profiles for structural, plumbing, and industrial applications." benefits={['IS Certified', 'All Sizes', 'Standard Lengths', 'Bulk Supply']} products={products} categoryBackLink="/products" />
     );
 }

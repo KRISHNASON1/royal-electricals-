@@ -21,37 +21,37 @@ const FeaturedProducts = () => {
       title: 'Cables & Wires',
       description: 'Premium quality cables and wiring solutions from authorized dealers',
       image: '/images/Products_preview/Wires&Cables.jpg',
-      color: 'from-blue-500 to-blue-700',
+      color: 'from-primary-500 to-primary-700',
     },
     {
       title: 'LED Lighting',
       description: 'Energy-efficient LED solutions for industrial and commercial spaces',
       image: '/images/Products_preview/LED.jpg',
-      color: 'from-yellow-500 to-yellow-700',
+      color: 'from-primary-500 to-primary-700',
     },
     {
       title: 'Safety Equipment',
       description: 'Complete range of safety gear and industrial protection equipment',
       image: '/images/Products_preview/SafetyGloves.jpg',
-      color: 'from-red-500 to-red-700',
+      color: 'from-secondary-500 to-secondary-700',
     },
     {
       title: 'Electrical Switchgear',
       description: 'High-quality switchgear and control systems for power distribution',
       image: '/images/Products_preview/Switchgears.jpg',
-      color: 'from-green-500 to-green-700',
+      color: 'from-primary-500 to-primary-700',
     },
     {
       title: 'Pipes & Fittings',
       description: 'Durable pipes and fittings for industrial plumbing applications',
       image: '/images/Products_preview/PVCPipes&Fittings.jpg',
-      color: 'from-purple-500 to-purple-700',
+      color: 'from-secondary-500 to-secondary-700',
     },
     {
       title: 'Power Tools',
       description: 'Professional-grade power tools for construction and maintenance',
       image: '/images/Products_preview/PowerTools&HandTools.jpg',
-      color: 'from-orange-500 to-orange-700',
+      color: 'from-primary-500 to-primary-700',
     },
   ];
 

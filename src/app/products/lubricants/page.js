@@ -9,28 +9,28 @@ export default function LubricantsPage() {
             name: 'Industrial Oils',
             description: 'Hydraulic oils, gear oils, and machine lubricants.',
             icon: <Droplet className="w-8 h-8" />,
-            color: 'from-amber-500 to-amber-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/lubricants/industrial-oils',
         },
         {
             name: 'Greases',
             description: 'Multi-purpose and specialty greases for bearings and joints.',
             icon: <Settings className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/lubricants/greases',
         },
         {
             name: 'Transformer Oil',
             description: 'Insulating oils for transformers and electrical equipment.',
             icon: <Thermometer className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/lubricants/transformer-oil',
         },
         {
             name: 'Specialty Lubricants',
             description: 'Cutting oils, rust preventives, and specialty fluids.',
             icon: <Cog className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/lubricants/specialty-lubricants',
         },
     ];
@@ -47,7 +47,7 @@ export default function LubricantsPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-3xl mb-6 shadow-lg">
                         <Droplet className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -89,17 +89,17 @@ export default function LubricantsPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-amber-700 to-orange-800 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-primary-700 to-primary-800 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Need Lubricant Recommendations?</h2>
-                        <p className="text-amber-100 mb-8 max-w-2xl mx-auto">
+                        <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
                             Our technical team can recommend the right lubricant based on your equipment specifications and operating conditions.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-amber-800 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-800 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 text-white rounded-full font-semibold hover:bg-amber-700 transition-all">
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all">
                                 Get Technical Advice
                             </Link>
                         </div>

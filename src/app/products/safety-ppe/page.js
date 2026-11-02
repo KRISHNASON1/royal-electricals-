@@ -9,56 +9,56 @@ export default function SafetyPPEPage() {
             name: 'Safety Gloves',
             description: 'Industrial and protective gloves for all applications.',
             icon: <Hand className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/safety-ppe/safety-gloves',
         },
         {
             name: 'Fall Protection',
             description: 'Harnesses, lanyards and fall arrest systems.',
             icon: <HardHat className="w-8 h-8" />,
-            color: 'from-orange-500 to-orange-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/safety-ppe/fall-protection',
         },
         {
             name: 'Workwear',
             description: 'Industrial uniforms, coveralls and protective clothing.',
             icon: <Shirt className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/safety-ppe/workwear',
         },
         {
             name: 'Eye Protection',
             description: 'Safety glasses, goggles and face shields.',
             icon: <Eye className="w-8 h-8" />,
-            color: 'from-cyan-500 to-cyan-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/safety-ppe/eye-protection',
         },
         {
             name: 'Safety Wear',
             description: 'High visibility vests, jackets and safety apparel.',
             icon: <Shield className="w-8 h-8" />,
-            color: 'from-yellow-500 to-yellow-600',
+            color: 'from-primary-500 to-primary-600',
             href: '/products/safety-ppe/safety-wear',
         },
         {
             name: 'Fire Safety',
             description: 'Fire extinguishers, blankets and firefighting equipment.',
             icon: <Flame className="w-8 h-8" />,
-            color: 'from-red-500 to-red-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/safety-ppe/fire-safety',
         },
         {
             name: 'Road Safety Equipments',
             description: 'Traffic cones, barriers and road safety gear.',
             icon: <Car className="w-8 h-8" />,
-            color: 'from-amber-500 to-amber-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/safety-ppe/road-safety',
         },
         {
             name: 'Respiratory Protection',
             description: 'Masks, respirators and breathing apparatus.',
             icon: <Wind className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/safety-ppe/respiratory-protection',
         },
     ];
@@ -80,7 +80,7 @@ export default function SafetyPPEPage() {
 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-3xl mb-6 shadow-lg">
                         <Shield className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">

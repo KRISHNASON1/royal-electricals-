@@ -11,6 +11,6 @@ const products = [
 
 export default function WeldingMachinesPage() {
     return (
-        <ProductListing title="Welding Machines" description="Complete range of welding equipment for arc, MIG, TIG, spot welding, and plasma cutting applications." benefits={['All Processes', 'Consumables Available', 'Training Support', 'AMC Options']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Welding Machines" description="Complete range of welding equipment for arc, MIG, TIG, spot welding, and plasma cutting applications." benefits={['All Processes', 'Consumables Available', 'Product Selection', 'Spare Parts Available']} products={products} categoryBackLink="/products" />
     );
 }

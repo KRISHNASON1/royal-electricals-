@@ -14,46 +14,42 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://megaenterprise.in'),
-  title: 'MEGA Enterprise - Industrial Materials Supplier | GeM Approved',
-  description: 'Authorized supplier of electrical, safety & industrial materials. GeM approved, serving 50+ major clients across India. Get instant quotes.',
-  keywords: 'industrial materials, electrical supplier, GeM approved vendor, cables, LED lighting, safety equipment, Navi Mumbai, TATA, Siemens, Polycab, B2B fabrication, industrial engineering, structural steel, Taloja MIDC industrial supplier, Maharashtra engineering materials, factory automation, power tools, heavy machinery supplies',
-  authors: [{ name: 'MEGA Enterprise' }],
+  metadataBase: new URL('https://www.royalelectrical.in'),
+  title: 'Royal Electricals & Hardware | Electrical & Hardware Solutions Since 2000',
+  description: 'Electrical and hardware supplier in Taloja MIDC since 2000. Explore 1000+ products from Siemens, Havells, Polycab, Anchor/Roma and other leading brands. Request a quote.',
+  keywords: 'Royal Electricals & Hardware, electrical supplier Taloja, hardware Taloja MIDC, Siemens, Havells, Polycab, Anchor Roma, wires, cables, switchgear, lighting, fans, industrial supplies',
+  authors: [{ name: 'Royal Electricals & Hardware' }],
   manifest: '/manifest.json',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/royal-crown-transparent.png',
+    apple: '/royal-crown-transparent.png',
   },
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'MEGA Enterprise - Your Trusted Industrial Partner',
-    description: 'GeM approved supplier of excellence in industrial materials',
+    title: 'Royal Electricals & Hardware - Your Trusted Industrial Partner',
+    description: 'Electrical & Hardware Solutions Since 2000. Serving 50+ clients with 1000+ products.',
+    images: [{ url: '/royal-crown-transparent.png', width: 1448, height: 1086, alt: 'Royal Electricals & Hardware crown' }],
     type: 'website',
     locale: 'en_IN',
-    siteName: 'MEGA Enterprise',
+    siteName: 'Royal Electricals & Hardware',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MEGA Enterprise - Industrial Materials Supplier',
-    description: 'GeM approved supplier',
+    title: 'Royal Electricals & Hardware - Industrial Materials Supplier',
+    description: 'Electrical & Hardware Solutions Since 2000. Taloja MIDC, Maharashtra.',
   },
   robots: {
     index: true,
     follow: true,
-  },
-  verification: {
-    other: {
-      'msvalidate.01': 'F723B27702BEF6A5363EDBC9E744597F',
-    },
   },
 };
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#7AB2D3',
+  themeColor: '#B68B22',
 };
 
 export default function RootLayout({ children }) {
@@ -74,7 +70,7 @@ export default function RootLayout({ children }) {
 
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/917506070157?text=Hello%20MEGA%20Enterprise%2C%20I%27m%20interested%20in%20your%20products"
+          href="https://wa.me/918591169113?text=Hello%20Royal%20Electricals%20%26%20Hardware%2C%20I%27m%20interested%20in%20your%20products"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"

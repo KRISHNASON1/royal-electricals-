@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { getTransporter } from '@/lib/nodemailer';
 import { generateEmailHTML, generatePlainTextEmail } from '@/lib/email-template';
 import { generateCustomerConfirmationHTML, generateCustomerConfirmationPlainText } from '@/lib/customer-confirmation-template';
+import { site } from '@/lib/site';
 
 export async function POST(request) {
   try {
@@ -42,14 +43,15 @@ export async function POST(request) {
     // Admin email options
     const adminMailOptions = {
       from: {
-        name: 'MEGA Enterprise Website',
+        name: 'Royal Electricals & Hardware Website',
         address: process.env.EMAIL_FROM,
       },
-      to: process.env.EMAIL_TO,
+      to: site.email,
       subject: `New Enquiry from ${name} - ${company}`,
       text: adminTextContent,
       html: adminHtmlContent,
       replyTo: email, // Allow direct reply to customer
+      attachments: [{ filename: 'royal-crown-transparent.png', path: `${process.cwd()}/public/royal-crown-transparent.png`, cid: 'royal-logo' }],
     };
 
     // Generate customer confirmation email
@@ -59,13 +61,15 @@ export async function POST(request) {
     // Customer confirmation email options
     const customerMailOptions = {
       from: {
-        name: 'MEGA Enterprise',
+        name: 'Royal Electricals & Hardware',
         address: process.env.EMAIL_FROM,
       },
       to: email, // Send to customer's email
-      subject: 'Thank you for your enquiry - MEGA Enterprise',
+      subject: 'Thank you for your enquiry - Royal Electricals & Hardware',
       text: customerTextContent,
       html: customerHtmlContent,
+      replyTo: site.email,
+      attachments: [{ filename: 'royal-crown-transparent.png', path: `${process.cwd()}/public/royal-crown-transparent.png`, cid: 'royal-logo' }],
     };
 
     const transporter = getTransporter();

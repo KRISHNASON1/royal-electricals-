@@ -9,6 +9,6 @@ const products = [
 
 export default function MSChannelsPage() {
     return (
-        <ProductListing title="MS Channels" description="Structural steel channel sections in ISMC, ISLC, and PFC profiles for construction and fabrication projects." benefits={['IS 2062 Grade', 'All Standard Sizes', 'Custom Cutting', 'Delivery Available']} products={products} categoryBackLink="/products" />
+        <ProductListing title="MS Channels" description="Structural steel channel sections in ISMC, ISLC, and PFC profiles for construction and fabrication projects." benefits={['IS 2062 Grade', 'All Standard Sizes', 'Standard Sizes Available', 'Delivery Available']} products={products} categoryBackLink="/products" />
     );
 }

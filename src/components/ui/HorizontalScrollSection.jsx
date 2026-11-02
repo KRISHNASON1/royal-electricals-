@@ -155,110 +155,43 @@ const HorizontalScrollSection = () => {
 
     const cards = [
         {
-            id: 1,
-            title: 'Our Vision & Mission',
+            id: 1, title: 'Our Story', icon: TrendingUp,
             content: (
-                <div className="grid md:grid-cols-2 gap-3 md:gap-8 h-full">
-                    <div className="bg-primary-50/50 p-3 md:p-6 rounded-xl md:rounded-2xl border border-primary-100">
-                        <h4 className="text-sm md:text-lg font-bold text-primary-700 mb-1.5 md:mb-3 uppercase tracking-wider flex items-center">
-                            <TrendingUp className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2" /> Our Vision
-                        </h4>
-                        <p className="text-gray-600 leading-snug md:leading-relaxed text-xs md:text-sm">
-                            Market products & services which will ensure customers satisfaction and appreciation.
-                            Create & maintain a friendly environment that ensures involvement & commitment in all of us to aim for total quality in everything we do.
-                        </p>
-                    </div>
-                    <div className="bg-blue-50/50 p-3 md:p-6 rounded-xl md:rounded-2xl border border-blue-100">
-                        <h4 className="text-sm md:text-lg font-bold text-primary-700 mb-1.5 md:mb-3 uppercase tracking-wider flex items-center">
-                            <Factory className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2" /> Our Mission
-                        </h4>
-                        <p className="text-gray-600 leading-snug md:leading-relaxed text-xs md:text-sm">
-                            To be the absolute best electrical service provider in the market we serve and to offer our customers a one-stop solution for their entire electrical power distribution needs.
-                            We believe in fostering positive business partnerships with our vendors.
-                        </p>
-                    </div>
+                <div className="h-full flex flex-col justify-center gap-5">
+                    <p className="text-4xl md:text-6xl font-bold text-secondary-600">Since 2000</p>
+                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed">Royal Electricals &amp; Hardware is a supplier, trader, and distributor in Taloja MIDC. We bring together trusted electrical and hardware brands to meet our customers' everyday and project requirements.</p>
+                    <p className="text-primary-700 font-semibold text-sm md:text-lg">50+ clients. 1000+ products. One dependable supply partner.</p>
                 </div>
-            ),
-            icon: TrendingUp
+            )
         },
         {
-            id: 2,
-            title: 'Industries We Care',
+            id: 2, title: 'Our Brand Relationships', icon: Factory,
             content: (
                 <div className="h-full flex flex-col justify-center">
-                    <p className="text-gray-500 mb-3 md:mb-6 text-sm md:text-lg">Powering progress across diverse sectors with specialized solutions.</p>
-                    <ul className="grid grid-cols-3 md:grid-cols-3 gap-2 md:gap-4">
-                        {[
-                            { name: 'Construction', icon: Building },
-                            { name: 'Infrastructure', icon: Hammer },
-                            { name: 'Power & Energy', icon: Zap },
-                            { name: 'Manufacturing', icon: Factory },
-                            { name: 'Oil & Gas', icon: Fuel },
-                            { name: 'Engineering', icon: Hammer },
-                        ].map((item, idx) => (
-                            <li key={idx} className="flex flex-col items-center justify-center text-center p-2 md:p-4 rounded-lg md:rounded-xl bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-300 border border-gray-100 group">
-                                <item.icon className="w-5 h-5 md:w-8 md:h-8 text-primary-400 mb-1.5 md:mb-3 group-hover:text-primary-600 transition-colors" />
-                                <span className="font-semibold text-gray-700 text-xs md:text-sm">{item.name}</span>
-                            </li>
-                        ))}
-                    </ul>
+                    <p className="text-gray-600 mb-5 text-sm md:text-lg">Long-standing vendor relationships help us source reliable products and respond to varied requirements.</p>
+                    <div className="flex flex-wrap gap-2 md:gap-3">
+                        {['Siemens', 'L&T', 'Havells', 'Standard Electricals', 'Anchor/Roma', 'Usha', 'Bajaj', 'Polycab', 'Syska', 'Osram', 'Berger'].map(brand => <span key={brand} className="rounded-lg border border-primary-100 bg-primary-50 px-3 py-2 text-xs md:text-sm font-semibold text-primary-800">{brand}</span>)}
+                    </div>
                 </div>
-            ),
-            icon: Factory
+            )
         },
         {
-            id: 3,
-            title: 'Why Deal With Us?',
+            id: 3, title: 'Why Choose Royal?', icon: Shield,
             content: (
-                <div className="grid md:grid-cols-5 gap-3 md:gap-6 h-full">
-                    {/* Left Col: Dealers */}
-                    <div className="md:col-span-3 bg-primary-50 p-3 md:p-6 rounded-xl md:rounded-2xl border border-primary-100 flex flex-col justify-center">
-                        <h4 className="font-bold text-primary-800 mb-2 md:mb-4 flex items-center text-sm md:text-lg">
-                            <Shield className="w-4 h-4 md:w-6 md:h-6 mr-1.5 md:mr-2" /> Authorized Dealers
-                        </h4>
-                        <p className="text-xs md:text-sm text-primary-600 mb-2 md:mb-4">Genuine products from top global brands:</p>
-                        <div className="flex flex-wrap gap-1.5 md:gap-2">
-                            {['Siemens', 'Polycab', 'Ledvance', 'Berger', 'Usha', 'Europa', 'Finolex', 'L&T', 'Schneider'].map(brand => (
-                                <span key={brand} className="text-xs md:text-sm bg-white px-2 py-1 md:px-3 md:py-1.5 rounded-md md:rounded-lg border border-primary-100 text-primary-700 shadow-sm font-medium">{brand}</span>
-                            ))}
-                        </div>
-                    </div>
-                    {/* Right Col: Benefits */}
-                    <div className="md:col-span-2 flex flex-col justify-center space-y-2 md:space-y-3">
-                        <div className="flex items-center p-2 md:p-3 bg-green-50 rounded-lg border border-green-100 text-green-800 font-medium text-sm md:text-base">
-                            <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-green-600" /> Reasonable Prices
-                        </div>
-                        <div className="flex items-center p-2 md:p-3 bg-blue-50 rounded-lg border border-blue-100 text-blue-800 font-medium text-sm md:text-base">
-                            <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-blue-600" /> Excellent Quality
-                        </div>
-                        <div className="flex items-center p-2 md:p-3 bg-purple-50 rounded-lg border border-purple-100 text-purple-800 font-medium text-sm md:text-base">
-                            <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-purple-600" /> After Sales Support
-                        </div>
-                    </div>
-                </div>
-            ),
-            icon: Shield
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 h-full content-center">
+                    {['Competitive pricing', 'Strong distribution network', 'Clear business dealings', 'Warehouse capacity', 'Timely delivery', 'Customer-focused service'].map(text => <li key={text} className="flex items-center gap-3 p-3 md:p-4 rounded-xl bg-primary-50 text-primary-800 font-medium text-xs md:text-base"><CheckCircle className="w-5 h-5 shrink-0" />{text}</li>)}
+                </ul>
+            )
         },
         {
-            id: 4,
-            title: 'Consumer Satisfaction',
+            id: 4, title: 'Quality Assurance', icon: CheckCircle,
             content: (
-                <div className="h-full flex flex-col">
-                    <p className="text-gray-600 mb-3 md:mb-6 text-sm md:text-lg">Trusted by over <span className="font-bold text-primary-600">50+ major companies</span> across India for their critical project needs.</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 flex-1 content-start">
-                        {['TATA Projects', 'Afcons Infra', 'L&T', 'Godrej', 'NCC Ltd', 'Shapoorji', 'Reliance', 'Adani'].map((client, idx) => (
-                            <div key={idx} className="bg-white p-2.5 md:p-4 rounded-lg md:rounded-xl text-xs md:text-sm font-bold text-gray-700 border border-gray-100 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow text-center">
-                                {client}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="mt-3 md:mt-6 pt-3 md:pt-4 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-center md:text-left">
-                        <span className="text-gray-500 text-xs md:text-sm">Consistent performance across all sectors</span>
-                        <span className="text-primary-600 font-bold text-sm md:text-lg bg-primary-50 px-3 md:px-4 py-1 rounded-full whitespace-nowrap">100% Client Retention</span>
-                    </div>
+                <div className="h-full flex flex-col justify-center gap-5">
+                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed">Quality is central to our sourcing and supply. We work with established vendors and focus on dependable products that meet our customers' requirements.</p>
+                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed">Our goal is to understand each requirement, arrange the right products, and deliver on schedule. Clear communication and consistent service help us build lasting customer relationships.</p>
+                    <span className="self-start bg-secondary-50 text-secondary-700 rounded-full px-4 py-2 font-semibold text-xs md:text-sm">Reliable products. Lasting relationships.</span>
                 </div>
-            ),
-            icon: Users
+            )
         }
     ];
 

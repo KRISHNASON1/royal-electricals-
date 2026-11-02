@@ -11,6 +11,6 @@ const products = [
 
 export default function ConcreteMixersPage() {
     return (
-        <ProductListing title="Concrete Mixers" description="Concrete mixing equipment from portable tilting mixers to transit mixers for all project scales." benefits={['All Capacities', 'Electric & Diesel', 'Rental Available', 'Spare Parts Support']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Concrete Mixers" description="Concrete mixing equipment from portable tilting mixers to transit mixers for all project scales." benefits={['All Capacities', 'Electric & Diesel', 'Bulk Supply', 'Spare Parts Support']} products={products} categoryBackLink="/products" />
     );
 }

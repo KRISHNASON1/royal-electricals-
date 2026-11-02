@@ -30,8 +30,8 @@ export default function FireSafetyPage() {
 
     const benefits = [
         'ISI / BIS Approved',
-        'Installation Services',
-        'Maintenance Contracts',
+        'Product Selection',
+        'Bulk Supply',
         'Expert Consultation'
     ];
 

@@ -16,28 +16,28 @@ export default function PanelAccessoriesPage() {
             name: 'Meters & Instruments',
             description: 'Analog and digital meters for electrical parameter monitoring.',
             icon: <Gauge className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/panel-accessories/meters-instruments',
         },
         {
             name: 'Push Buttons & Indicators',
             description: 'Control station components and pilot lights.',
             icon: <ToggleLeft className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/panel-accessories/push-buttons-indicators',
         },
         {
             name: 'Terminal Blocks',
             description: 'DIN rail terminal blocks and connectors for panel wiring.',
             icon: <PenTool className="w-8 h-8" />,
-            color: 'from-orange-500 to-orange-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/panel-accessories/terminal-blocks',
         },
         {
             name: 'Enclosures & Busbars',
             description: 'Panel enclosures, busbars, and distribution components.',
             icon: <Thermometer className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/panel-accessories/enclosures-busbars',
         },
     ];
@@ -54,7 +54,7 @@ export default function PanelAccessoriesPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-3xl mb-6 shadow-lg">
                         <PenTool className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -96,17 +96,17 @@ export default function PanelAccessoriesPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-indigo-900 to-purple-900 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-primary-900 to-secondary-900 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Building Control Panels?</h2>
-                        <p className="text-indigo-200 mb-8 max-w-2xl mx-auto">
+                        <p className="text-primary-200 mb-8 max-w-2xl mx-auto">
                             We supply complete panel building kits and can provide component lists based on your single-line diagrams.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-indigo-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition-all">
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all">
                                 Request BOM Quote
                             </Link>
                         </div>

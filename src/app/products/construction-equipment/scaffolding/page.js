@@ -11,6 +11,6 @@ const products = [
 
 export default function ScaffoldingPage() {
     return (
-        <ProductListing title="Scaffolding & Shuttering" description="Complete scaffolding and formwork systems for safe construction at height and efficient concrete casting." benefits={['Heavy Load Capacity', 'Quick Assembly', 'Rental Available', 'Safety Certified']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Scaffolding & Shuttering" description="Complete scaffolding and formwork systems for safe construction at height and efficient concrete casting." benefits={['Heavy Load Capacity', 'Quick Assembly', 'Bulk Supply', 'Safety Certified']} products={products} categoryBackLink="/products" />
     );
 }

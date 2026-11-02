@@ -9,21 +9,21 @@ export default function SolarPage() {
             name: 'Solar Panels',
             description: 'Monocrystalline and polycrystalline photovoltaic modules.',
             icon: <Sun className="w-8 h-8" />,
-            color: 'from-yellow-500 to-orange-600',
+            color: 'from-primary-500 to-primary-600',
             href: '/products/solar/solar-panels',
         },
         {
             name: 'Solar Inverters',
             description: 'On-grid, off-grid, and hybrid solar inverters.',
             icon: <Gauge className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/solar/solar-inverters',
         },
         {
             name: 'Solar Batteries',
             description: 'Deep cycle and lithium batteries for solar storage.',
             icon: <Battery className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/solar/solar-batteries',
         },
         {
@@ -47,7 +47,7 @@ export default function SolarPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-3xl mb-6 shadow-lg">
                         <Sun className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -89,18 +89,18 @@ export default function SolarPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-yellow-600 to-orange-600 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-primary-600 to-primary-600 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Ready to Go Solar?</h2>
-                        <p className="text-yellow-100 mb-8 max-w-2xl mx-auto">
-                            We provide complete turnkey solar installations including design, supply, and installation services.
+                        <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
+                            We supply solar panels, inverters, batteries, and accessories. Send us your product requirements for a quotation.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-yellow-700 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-yellow-700 text-white rounded-full font-semibold hover:bg-yellow-800 transition-all">
-                                Get Free Site Survey
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary-700 text-white rounded-full font-semibold hover:bg-primary-800 transition-all">
+                                Request Product Quote
                             </Link>
                         </div>
                     </div>

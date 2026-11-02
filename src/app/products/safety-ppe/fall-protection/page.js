@@ -30,8 +30,8 @@ export default function FallProtectionPage() {
 
     const benefits = [
         'Certified Safety Gear',
-        'Regular Inspection Services',
-        'Training Support',
+        'Product Specifications',
+        'Product Selection',
         'Fast Replacement'
     ];
 

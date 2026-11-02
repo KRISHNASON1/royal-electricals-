@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { MapPin, Phone, Mail, Clock, ArrowRight, User } from 'lucide-react';
 import ContactForm from '@/components/shared/ContactForm';
 import { getCartCount, formatCartForRequirements } from '@/lib/cart';
+import { site } from '@/lib/site';
 
 function ContactContent() {
   const searchParams = useSearchParams();
@@ -36,14 +37,14 @@ function ContactContent() {
         <div className="mb-20">
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 mb-8 group">
             <div className="hidden md:block absolute top-0 right-0 w-1/2 h-full overflow-hidden rounded-r-3xl">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5447892345!2d73.1089!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3M8KwMDYnMzIuMCJF!5e0!3m2!1sen!2sin!4v1234567890" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade" 
-                title="MEGA Enterprise Location" 
+              <iframe
+                src={site.map}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Royal Electricals & Hardware Location"
                 className="w-full h-full"
               ></iframe>
             </div>
@@ -57,15 +58,15 @@ function ContactContent() {
                 <div className="flex-1 md:max-w-[45%]">
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Visit Our Office</h3>
                   <div className="space-y-1 sm:space-y-2 text-white/90 text-base sm:text-lg">
-                    <p className="font-semibold">Plot No. 57, Opp M.I.D.C Water Tank TALOJA</p>
-                    <p>Navi Mumbai - 410208</p>
+                    <p className="font-semibold">Plot No. PAP 57, Opposite M.I.D.C. Water Tank</p>
+                    <p>Taloja MIDC, Raigad - 410208</p>
                     <p>Maharashtra, India</p>
                   </div>
                   <div className="mt-4 sm:mt-6">
-                    <a 
-                      href="https://maps.google.com/?q=Plot+No.+57,+Opp+M.I.D.C+Water+Tank+TALOJA,+Navi+Mumbai+-+410208" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={site.directions}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center space-x-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white text-primary-600 rounded-full font-semibold text-sm sm:text-base hover:shadow-xl hover:scale-105 transition-all duration-300"
                     >
                       <span>Get Directions</span>
@@ -77,14 +78,14 @@ function ContactContent() {
             </div>
           </div>
           <div className="md:hidden w-full h-48 sm:h-56 overflow-hidden">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5447892345!2d73.1089!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3M8KwMDYnMzIuMCJF!5e0!3m2!1sen!2sin!4v1234567890" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade" 
-              title="MEGA Enterprise Location" 
+            <iframe
+              src={site.map}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Royal Electricals & Hardware Location"
               className="w-full h-full"
             ></iframe>
           </div>
@@ -107,10 +108,10 @@ function ContactContent() {
             <ContactForm initialRequirements={initialRequirements} />
           </div>
           <div className="order-2 lg:order-2">
-            <div className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-3xl p-8 shadow-xl border border-blue-100/50 h-full flex flex-col overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full -mr-32 -mt-32 opacity-40 pointer-events-none blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-purple-100 to-pink-100 rounded-full -ml-32 -mb-32 opacity-40 pointer-events-none blur-3xl"></div>
-              
+            <div className="relative bg-gradient-to-br from-primary-50 via-white to-primary-50 rounded-3xl p-8 shadow-xl border border-primary-100/50 h-full flex flex-col overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary-100 to-primary-100 rounded-full -mr-32 -mt-32 opacity-40 pointer-events-none blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-secondary-100 to-secondary-100 rounded-full -ml-32 -mb-32 opacity-40 pointer-events-none blur-3xl"></div>
+
               <div className="relative z-10 mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   <span className="bg-gradient-to-r from-primary-700 to-primary-500 bg-clip-text text-transparent">Prefer Instant Communication?</span>
@@ -121,36 +122,36 @@ function ContactContent() {
               </div>
 
               <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="p-5 bg-gradient-to-br from-white to-blue-50/30 rounded-2xl border border-blue-100 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-300 shadow-sm">
-                    <User className="w-6 h-6 text-blue-700 group-hover:text-white transition-colors" />
+                <div className="p-5 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl border border-primary-100 shadow-sm hover:shadow-lg hover:border-primary-300 transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-primary-600 transition-all duration-300 shadow-sm">
+                    <User className="w-6 h-6 text-primary-700 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors tracking-tight">NIRMAL DEWASI</h3>
+                  <h3 className="font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors tracking-tight">SALES &amp; WHATSAPP</h3>
                   <div className="space-y-2">
-                    <a href="tel:+917506070157" className="flex items-center text-gray-600 hover:text-blue-700 transition-colors text-sm font-medium p-1 -ml-1 rounded-lg hover:bg-blue-50/50">
-                      <Phone className="w-4 h-4 mr-2 text-blue-400 group-hover:text-blue-600" />
-                      +91 750 6070 157
+                    <a href="tel:+918591169113" className="flex items-center text-gray-600 hover:text-primary-700 transition-colors text-sm font-medium p-1 -ml-1 rounded-lg hover:bg-primary-50/50">
+                      <Phone className="w-4 h-4 mr-2 text-primary-400 group-hover:text-primary-600" />
+                      +91 85911 69113
                     </a>
-                    <a href="mailto:nirmal@megaenterprise.in" className="flex items-center text-gray-600 hover:text-blue-700 transition-colors text-xs font-medium p-1 -ml-1 rounded-lg hover:bg-blue-50/50">
-                      <Mail className="w-4 h-4 mr-2 text-blue-400 group-hover:text-blue-600" />
-                      nirmal@megaenterprise.in
+                    <a href="mailto:royalelectrical_taloja@rediffmail.com" className="flex items-center text-gray-600 hover:text-primary-700 transition-colors text-xs font-medium break-all p-1 -ml-1 rounded-lg hover:bg-primary-50/50">
+                      <Mail className="w-4 h-4 mr-2 text-primary-400 group-hover:text-primary-600" />
+                      royalelectrical_taloja@rediffmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="p-5 bg-gradient-to-br from-white to-indigo-50/30 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-indigo-600 transition-all duration-300 shadow-sm">
-                    <User className="w-6 h-6 text-indigo-700 group-hover:text-white transition-colors" />
+                <div className="p-5 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl border border-primary-100 shadow-sm hover:shadow-lg hover:border-primary-300 transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-primary-600 transition-all duration-300 shadow-sm">
+                    <User className="w-6 h-6 text-primary-700 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-3 group-hover:text-indigo-700 transition-colors tracking-tight">KAILASH DEWASI</h3>
+                  <h3 className="font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors tracking-tight">ROYAL OFFICE</h3>
                   <div className="space-y-2">
-                    <a href="tel:+918591169113" className="flex items-center text-gray-600 hover:text-indigo-700 transition-colors text-sm font-medium p-1 -ml-1 rounded-lg hover:bg-indigo-50/50">
-                      <Phone className="w-4 h-4 mr-2 text-indigo-400 group-hover:text-indigo-600" />
-                      +91 85911 69113
+                    <a href="tel:02227401969" className="flex items-center text-gray-600 hover:text-primary-700 transition-colors text-sm font-medium p-1 -ml-1 rounded-lg hover:bg-primary-50/50">
+                      <Phone className="w-4 h-4 mr-2 text-primary-400 group-hover:text-primary-600" />
+                      022-27401969
                     </a>
-                    <a href="mailto:kailash@megaenterprise.in" className="flex items-center text-gray-600 hover:text-indigo-700 transition-colors text-xs font-medium p-1 -ml-1 rounded-lg hover:bg-indigo-50/50">
-                      <Mail className="w-4 h-4 mr-2 text-indigo-400 group-hover:text-indigo-600" />
-                      kailash@megaenterprise.in
+                    <a href="tel:02227410775" className="flex items-center text-gray-600 hover:text-primary-700 transition-colors text-sm font-medium p-1 -ml-1 rounded-lg hover:bg-primary-50/50">
+                      <Phone className="w-4 h-4 mr-2 text-primary-400 group-hover:text-primary-600" />
+                      022-27410775
                     </a>
                   </div>
                 </div>
@@ -161,13 +162,13 @@ function ContactContent() {
                   <span className="w-8 h-0.5 bg-gray-300 mr-2 rounded-full"></span>
                   General Inquiries
                 </h3>
-                <div className="bg-blue-50/50 rounded-2xl p-4 border border-blue-100/50 space-y-3 backdrop-blur-sm">
-                  {['info@megaenterprise.in', 'sales@megaenterprise.in', 'megaenterprise.info@gmail.com'].map((email) => (
-                    <a key={email} href={`mailto:${email}`} className="flex items-center group p-3 bg-white/60 hover:bg-white rounded-xl border border-transparent hover:border-blue-100 transition-all duration-200 shadow-sm">
-                      <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mr-3 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <div className="bg-primary-50/50 rounded-2xl p-4 border border-primary-100/50 space-y-3 backdrop-blur-sm">
+                  {[site.email].map((email) => (
+                    <a key={email} href={`mailto:${email}`} className="flex items-center group p-3 bg-white/60 hover:bg-white rounded-xl border border-transparent hover:border-primary-100 transition-all duration-200 shadow-sm">
+                      <div className="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center mr-3 text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
                         <Mail className="w-4 h-4" />
                       </div>
-                      <span className="text-gray-700 font-medium group-hover:text-blue-700 text-sm transition-colors">{email}</span>
+                      <span className="text-gray-700 font-medium group-hover:text-primary-700 text-sm transition-colors">{email}</span>
                     </a>
                   ))}
                 </div>
@@ -175,7 +176,7 @@ function ContactContent() {
 
               <div className="relative z-10 mt-auto">
                 <a
-                  href="https://wa.me/917506070157?text=Hello%20MEGA%20Enterprise%2C%20I%27m%20interested%20in%20your%20products"
+                  href="https://wa.me/918591169113?text=Hello%20Royal%20Electricals%20%26%20Hardware%2C%20I%27m%20interested%20in%20your%20products"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-green-200 hover:-translate-y-0.5 transition-all duration-300 group"

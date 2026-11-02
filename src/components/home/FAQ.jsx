@@ -4,38 +4,11 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
-  {
-    question: "What industrial materials and products does MEGA Enterprise sell?",
-    answer: "MEGA Enterprise supplies over 1,000 industrial products including electrical switchgears, structural steel, industrial lubricants, safety PPE kits, power tools, and hardware. We are authorized dealers for premium brands like Castrol, Siemens, Polycab, and TATA."
-  },
-  {
-    question: "Is MEGA Enterprise a GeM-approved vendor?",
-    answer: "Yes, MEGA Enterprise is a fully registered and GeM-approved (Government e-Marketplace) supplier. We regularly fulfill large-scale government and public sector tenders for industrial supplies."
-  },
-  {
-    question: "Where is MEGA Enterprise located and what is your delivery area?",
-    answer: "Our main office and warehouse are located at Plot No. 57, Opp M.I.D.C Water Tank in Taloja, Navi Mumbai, Maharashtra 410208. We serve over 50 major clients and provide delivery across India for bulk industrial orders."
-  },
-  {
-    question: "How can I request a B2B quote for fabrication or engineering materials?",
-    answer: "You can request an instant quote by visiting our Contact page, emailing sales@megaenterprise.in, or directly chatting with our sales executives Nirmal Dewasi (+91 750 6070 157) and Kailash Dewasi (+91 85911 69113) via WhatsApp or phone."
-  },
-  {
-    question: "What brands of industrial lubricants and electrical components do you stock?",
-    answer: "We stock premium industrial lubricants from Castrol, Shell, Mobil, and Gulf. For electrical components, we supply products from Siemens, Polycab, Finolex, and L&T switchgears."
-  },
-  {
-    question: "Do you supply heavy structural steel and construction chemicals?",
-    answer: "Yes, we supply a wide range of structural steel including TMT bars, angles, channels, and ISMBs from TATA and JSPL. We also provide construction chemicals for waterproofing, grouting, and concrete admixtures."
-  },
-  {
-    question: "What is the minimum order quantity for wholesale industrial supplies?",
-    answer: "While we cater primarily to B2B bulk requirements, minimum order quantities depend on the specific product category. Please contact our sales team at +91-7506070157 for exact MOQ requirements on your desired materials."
-  },
-  {
-    question: "Do you provide custom fabrication and electrical engineering services?",
-    answer: "Yes, besides material supply, MEGA Enterprise specializes in custom structural steel fabrication, electrical jobs, panel accessories installation, and bespoke engineering components from our Navi Mumbai facility."
-  }
+  { question: 'What does Royal Electricals & Hardware supply?', answer: 'We supply 1000+ electrical, hardware, and industrial products. Browse the Products page to explore the full range and add items to your enquiry.' },
+  { question: 'When was Royal established?', answer: 'Royal Electricals & Hardware was incorporated in 2000.' },
+  { question: 'Where is Royal located?', answer: 'Visit us at Plot No. PAP 57, Opposite M.I.D.C. Water Tank, Taloja MIDC, Raigad - 410208, Maharashtra, India.' },
+  { question: 'How can I request a quote?', answer: 'Use our enquiry form, email royalelectrical_taloja@rediffmail.com, or contact us on WhatsApp at +91 85911 69113.' },
+  { question: 'Which electrical brands do you supply?', answer: 'Our brands include Siemens, L&T, Havells, Standard Electricals, Anchor/Roma, Usha, Bajaj, Polycab, Syska, Osram, and Berger.' },
 ];
 
 export default function FAQ() {
@@ -70,7 +43,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600">
-            Everything you need to know about partnering with MEGA Enterprise.
+            Everything you need to know about partnering with Royal Electricals & Hardware.
           </p>
         </div>
 

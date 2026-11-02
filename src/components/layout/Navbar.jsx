@@ -35,11 +35,6 @@ const Navbar = () => {
         { name: 'Pipes, Pipe Fittings & Valves', href: '/products#pipes-fittings', icon: <PenTool className="w-4 h-4" /> },
     ];
 
-    const services = [
-        { name: 'Fabrication', href: '/services/fabrication', icon: <Hammer className="w-4 h-4" /> },
-        { name: 'Electrical Jobs', href: '/services/electrical-jobs', icon: <Wrench className="w-4 h-4" /> },
-    ];
-
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about' },
@@ -181,7 +176,7 @@ const Navbar = () => {
                         <div
                             className="absolute top-1/2 -translate-y-1/2 -right-12 w-[480px] h-[480px] opacity-[0.08] pointer-events-none"
                             style={{
-                                backgroundImage: 'url(/logo-pattern.png)',
+                                backgroundImage: 'url(/royal-crown-transparent.png)',
                                 backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPosition: 'center right',
@@ -208,23 +203,9 @@ const Navbar = () => {
                                     </div>
                                 </div>
 
-                                {/* Services Column */}
+                                {/* Product enquiry column */}
                                 <div>
-                                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Our Services</h3>
-                                    <div className="space-y-1">
-                                        {services.map((item) => (
-                                            <Link
-                                                key={item.name}
-                                                href={item.href}
-                                                onClick={() => setIsProductsDropdownOpen(false)}
-                                                className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-primary-50 text-gray-700 hover:text-primary-600 transition-all group"
-                                            >
-                                                <span className="text-gray-400 group-hover:text-primary-500">{item.icon}</span>
-                                                <span className="font-medium text-sm">{item.name}</span>
-                                            </Link>
-                                        ))}
-                                    </div>
-
+                                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Product Enquiries</h3>
                                     {/* CTA */}
                                     <div className="mt-6 p-4 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl">
                                         <p className="text-sm text-gray-600 mb-3">Need help finding the right product?</p>
@@ -246,7 +227,7 @@ const Navbar = () => {
                                     onClick={() => setIsProductsDropdownOpen(false)}
                                     className="flex items-center justify-center text-sm font-semibold text-primary-600 hover:text-primary-700 py-2"
                                 >
-                                    View All Products & Services <ChevronRight className="w-4 h-4 ml-1" />
+                                    View All Products <ChevronRight className="w-4 h-4 ml-1" />
                                 </Link>
                             </div>
                         </div>
@@ -263,17 +244,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-full w-full px-6 lg:px-8">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 group flex-shrink-0">
-                <div className="w-12 h-12 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                    <Image src="/logo.png" alt="MEGA Logo" width={48} height={48} className="object-contain w-full h-full" />
-                </div>
-                <div className="hidden sm:flex flex-col">
-                    <span className={`text-lg font-bold ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>MEGA</span>
-                    <span className={`text-[10px] -mt-1 ${isScrolled ? 'text-gray-600' : 'text-gray-600'}`}>Enterprise</span>
+                <div className="w-20 h-16 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
+                    <Image src="/royal-crown-transparent.png" alt="Royal Electricals & Hardware crown" width={1448} height={1086} className="object-contain w-full h-full" priority />
                 </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8 flex-shrink-0">
+            <div className="hidden lg:flex items-center space-x-8 flex-shrink-0">
                 <Link
                     href="/"
                     className={`font-bold transition-colors duration-200 relative group py-2 ${isScrolled ? 'text-gray-700 hover:text-primary-600' : 'text-gray-700 hover:text-primary-600'}`}
@@ -311,7 +288,7 @@ const Navbar = () => {
 
                 <Link
                     href="/contact"
-                    className="px-5 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 text-sm"
+                    className="px-5 py-2.5 bg-gradient-to-r from-secondary-500 to-secondary-700 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 text-sm"
                 >
                     Get Quote
                 </Link>
@@ -437,7 +414,7 @@ const Navbar = () => {
                                     onClick={(e) => {
                                         setIsMobileMenuOpen(false);
                                     }}
-                                    className="block w-full px-4 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full font-semibold text-center text-sm hover:shadow-lg active:scale-[0.98] transition-all duration-200 mt-2"
+                                    className="block w-full px-4 py-2.5 bg-gradient-to-r from-secondary-500 to-secondary-700 text-white rounded-full font-semibold text-center text-sm hover:shadow-lg active:scale-[0.98] transition-all duration-200 mt-2"
                                 >
                                     Get Quote
                                 </Link>

@@ -11,6 +11,6 @@ const products = [
 
 export default function FallProtectionPage() {
     return (
-        <ProductListing title="Fall Protection" description="Complete fall protection systems including harnesses, lanyards, lifelines, and anchor points for safe work at height." benefits={['EN Certified', 'All Height Ranges', 'Training Support', 'Inspection Service']} products={products} categoryBackLink="/products" fitImages={true} />
+        <ProductListing title="Fall Protection" description="Complete fall protection systems including harnesses, lanyards, lifelines, and anchor points for safe work at height." benefits={['EN Certified', 'All Height Ranges', 'Product Selection', 'Bulk Supply']} products={products} categoryBackLink="/products" fitImages={true} />
     );
 }

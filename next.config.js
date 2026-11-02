@@ -15,11 +15,11 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/MEGA-Enterprise-Catalog.pdf',
+        source: '/Royal-Electricals-Catalog.pdf',
         headers: [
           {
             key: 'Content-Disposition',
-            value: 'attachment; filename="MEGA-Enterprise-Catalog.pdf"',
+            value: 'attachment; filename="Royal-Electricals-Catalog.pdf"',
           },
         ],
       },

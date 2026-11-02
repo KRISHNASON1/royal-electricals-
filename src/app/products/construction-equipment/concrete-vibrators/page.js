@@ -10,6 +10,6 @@ const products = [
 
 export default function ConcreteVibratorsPage() {
     return (
-        <ProductListing title="Concrete Vibrators" description="Concrete consolidation vibrators including needle, surface, plate, and external types for quality concrete placement." benefits={['All Types', 'Electric & Petrol', 'Spare Needles', 'Rental Available']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Concrete Vibrators" description="Concrete consolidation vibrators including needle, surface, plate, and external types for quality concrete placement." benefits={['All Types', 'Electric & Petrol', 'Spare Needles', 'Bulk Supply']} products={products} categoryBackLink="/products" />
     );
 }

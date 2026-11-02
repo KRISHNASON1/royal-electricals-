@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, Hammer, Wrench } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export default function ProductsPage() {
   const categories = [
@@ -102,36 +102,19 @@ export default function ProductsPage() {
     },
   ];
 
-  const services = [
-    {
-      name: 'Fabrication',
-      description: 'Custom metal fabrication services tailored to your specific industrial needs. Precision engineering and high-quality materials ensuring durability.',
-      icon: <Hammer className="w-10 h-10" />,
-      image: '/images/Products_preview/electrical.jpg',
-      href: '/services/fabrication',
-    },
-    {
-      name: 'Electrical Jobs',
-      description: 'Comprehensive electrical installation, maintenance, and repair services. Expert technicians ensuring safety and compliance with standards.',
-      icon: <Wrench className="w-10 h-10" />,
-      image: '/images/Products_preview/Fabrication.jpg',
-      href: '/services/electrical-jobs',
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50 pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Products <span className="text-primary-600">&</span> Services
+            Our <span className="text-primary-600">Products</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive industrial solutions including a wide range of products and expert services.
+            Explore our range of electrical components, hardware, and industrial supplies from leading brands.
           </p>
         </div>
 
-        <div className="mb-24">
+        <div className="mb-4">
           <div className="flex items-center space-x-4 mb-14">
             <div className="h-px bg-gray-300 flex-1"></div>
             <h2 className="text-3xl font-bold text-gray-800">Product Categories</h2>
@@ -171,34 +154,6 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        <div>
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="h-px bg-gray-300 flex-1"></div>
-            <h2 className="text-3xl font-bold text-gray-800">Our Services</h2>
-            <div className="h-px bg-gray-300 flex-1"></div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {services.map((service, index) => (
-              <div key={index} className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-                <div className="relative h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                  <img src={service.image} alt={service.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute bottom-6 left-6 z-20 text-white flex items-center space-x-3">
-                    <div className="p-3 bg-white/20 backdrop-blur-md rounded-xl border border-white/30">{service.icon}</div>
-                    <h3 className="text-3xl font-bold">{service.name}</h3>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <p className="text-lg text-gray-600 leading-relaxed mb-6">{service.description}</p>
-                  <Link href={service.href} className="block w-full py-4 bg-gray-50 text-gray-900 rounded-xl font-bold hover:bg-primary-600 hover:text-white transition-all duration-300 border border-gray-200 hover:border-transparent text-center">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

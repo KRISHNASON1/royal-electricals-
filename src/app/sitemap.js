@@ -1,12 +1,11 @@
 export default function sitemap() {
   try {
-    const baseUrl = 'https://megaenterprise.in';
+    const baseUrl = 'https://www.royalelectrical.in';
 
     // Define all static routes
     const routes = [
       '',
       '/about',
-      '/catalog',
       '/contact',
       '/products',
       '/products/lubricants',
@@ -18,9 +17,6 @@ export default function sitemap() {
       '/products/motors',
       '/products/solar',
       '/products/gearboxes',
-      '/services',
-      '/services/fabrication',
-      '/services/electrical-jobs',
     ];
 
     return routes.map((route) => {

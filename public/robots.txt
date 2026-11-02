@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://megaenterprise.in/sitemap.xml
+Sitemap: https://www.royalelectrical.in/sitemap.xml

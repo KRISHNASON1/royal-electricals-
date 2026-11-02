@@ -11,6 +11,6 @@ const products = [
 
 export default function MSPipesPage() {
     return (
-        <ProductListing title="MS Pipes & Fittings" description="Mild steel pipes and fittings for structural, plumbing, process, and general engineering piping applications." benefits={['IS Certified', 'All Schedules', 'Threaded & BW', 'Custom Cutting']} products={products} categoryBackLink="/products" fitImages={true} />
+        <ProductListing title="MS Pipes & Fittings" description="Mild steel pipes and fittings for structural, plumbing, process, and general engineering piping applications." benefits={['IS Certified', 'All Schedules', 'Threaded & BW', 'Standard Sizes Available']} products={products} categoryBackLink="/products" fitImages={true} />
     );
 }

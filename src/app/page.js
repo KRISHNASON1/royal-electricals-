@@ -6,7 +6,7 @@ import FeaturedProducts from '@/components/home/FeaturedProducts';
 import StackingCardsShowcase from '@/components/home/StackingCardsShowcase';
 import BrandsShowcase from '@/components/home/BrandsShowcase';
 import ClientsShowcase from '@/components/home/ClientsShowcase';
-import GeMCompliance from '@/components/home/GeMCompliance';
+import WhyChooseRoyal from '@/components/home/WhyChooseRoyal';
 import CTASection from '@/components/home/CTASection';
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
         <ClientsShowcase />
       </div>
       <div className="reveal">
-        <GeMCompliance />
+        <WhyChooseRoyal />
       </div>
       <div className="reveal">
         <CTASection />

@@ -9,42 +9,42 @@ export default function SwitchgearsPage() {
             name: 'MCB & RCCB',
             description: 'Miniature circuit breakers and residual current devices for protection.',
             icon: <ToggleLeft className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/switchgears/mcb-rccb',
         },
         {
             name: 'MCCB & ACB',
             description: 'Moulded case and air circuit breakers for higher ratings.',
             icon: <Power className="w-8 h-8" />,
-            color: 'from-red-500 to-red-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/switchgears/mccb-acb',
         },
         {
             name: 'Contactors & Relays',
             description: 'Power contactors and control relays for motor control applications.',
             icon: <Cog className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/switchgears/contactors-relays',
         },
         {
             name: 'Starters & Drives',
             description: 'DOL starters, star-delta starters, and variable frequency drives.',
             icon: <Gauge className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/switchgears/starters-drives',
         },
         {
             name: 'Switches & Isolators',
             description: 'Load break switches, isolators, and changeover switches.',
             icon: <Zap className="w-8 h-8" />,
-            color: 'from-orange-500 to-orange-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/switchgears/switches-isolators',
         },
         {
             name: 'Surge Protection',
             description: 'SPDs and lightning arresters for equipment protection.',
             icon: <ShieldCheck className="w-8 h-8" />,
-            color: 'from-yellow-500 to-yellow-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/switchgears/surge-protection',
         },
     ];
@@ -61,7 +61,7 @@ export default function SwitchgearsPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-3xl mb-6 shadow-lg">
                         <Power className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -104,17 +104,17 @@ export default function SwitchgearsPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-green-900 to-green-800 rounded-3xl p-12 text-white">
-                        <h2 className="text-3xl font-bold mb-4">Need Panel Building Support?</h2>
-                        <p className="text-green-200 mb-8 max-w-2xl mx-auto">
-                            We provide complete switchgear solutions including design consultation, component supply, and technical support.
+                    <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-3xl p-12 text-white">
+                        <h2 className="text-3xl font-bold mb-4">Need Switchgear Components?</h2>
+                        <p className="text-primary-200 mb-8 max-w-2xl mx-auto">
+                            We supply switchgear and protection components for your project. Share your product list to request availability and pricing.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-green-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition-all">
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all">
                                 Get Technical Support
                             </Link>
                         </div>

@@ -16,7 +16,7 @@ export default function ElectricalPanelsPage() {
         <ProductListing
             title="Electrical Panels"
             description="Custom-built electrical panels for power distribution, motor control, automation, and power factor correction. Designed and manufactured to IS/IEC standards."
-            benefits={['Custom Built', 'IS/IEC Certified', 'Type Tested', 'Turnkey Solutions']}
+            benefits={['Multiple Ratings', 'IS/IEC Certified', 'Type Tested', 'Panel Components']}
             products={products}
             categoryBackLink="/products"
         />

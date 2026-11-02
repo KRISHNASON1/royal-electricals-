@@ -51,18 +51,18 @@ export default function AboutPage() {
         <div className="relative text-center mb-10 pb-20">
           {/* Main Title */}
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 relative z-10">
-            About <span className="text-primary-600">MEGA Enterprise</span>
+            About <span className="text-primary-600">Royal Electricals & Hardware</span>
           </h1>
           {/* Subtitle */}
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed relative z-10 mb-16">
-            We're your trusted partner in industrial and project materials supply,
-            serving government PSUs, infrastructure giants, and private enterprises across India.
+            Supplying electrical and hardware essentials since 2000, with trusted brand relationships,
+            a focus on quality, and dependable service from Taloja MIDC.
           </p>
 
           {/* Wavy Background SVG - Refined to match single large wave */}
           <div className="absolute top-1/2 left-0 right-0 -z-10 w-full h-[800px] overflow-hidden pointer-events-none translate-y-20 animate-fade-in">
-            <svg viewBox="0 0 1440 320" className="w-full h-full text-blue-50" preserveAspectRatio="none">
-              <path fill="#f0f9ff" fillOpacity="1" d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,213.3C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            <svg viewBox="0 0 1440 320" className="w-full h-full text-primary-50" preserveAspectRatio="none">
+              <path fill="#FBF8EC" fillOpacity="1" d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,213.3C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </svg>
           </div>
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 <path
                   d="M100,50 C250,50 350,85 600,60 C850,35 950,50 1100,50"
                   fill="none"
-                  stroke="#3b82f6"
+                  stroke="#B68B22"
                   strokeWidth="3"
                   strokeLinecap="round"
                   vectorEffect="non-scaling-stroke"
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 <path
                   d="M25,25 L75,25 L75,75 L25,75"
                   fill="none"
-                  stroke="#3b82f6"
+                  stroke="#C8423D"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -119,7 +119,7 @@ export default function AboutPage() {
               {[
                 { value: '50+', label: 'Major Clients', icon: Users, offset: 'md:translate-y-12', delay: 200 },
                 { value: '1000+', label: 'Products', icon: Building2, offset: 'md:translate-y-2', delay: 300 },
-                { value: '20+', label: 'Brand Partners', icon: TrendingUp, offset: 'translate-y-0', delay: 400 },
+                { value: '2000', label: 'Established', icon: TrendingUp, offset: 'translate-y-0', delay: 400 },
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 const isActive = activeStat === index;
@@ -135,11 +135,11 @@ export default function AboutPage() {
                   >
                     {/* Icon circle */}
                     <div className={`
-                      w-12 h-12 rounded-full bg-blue-100 border-4 border-white shadow-sm flex items-center justify-center mb-4 relative z-10
+                      w-12 h-12 rounded-full bg-primary-100 border-4 border-white shadow-sm flex items-center justify-center mb-4 relative z-10
                       transition-transform duration-300
                       ${isActive ? 'scale-110 rotate-3' : 'hover:scale-110 hover:rotate-3'}
                     `}>
-                      <Icon className="w-5 h-5 text-blue-600" />
+                      <Icon className="w-5 h-5 text-primary-600" />
                     </div>
 
                     {/* Stat pill */}
@@ -151,16 +151,16 @@ export default function AboutPage() {
                         group cursor-pointer
                         transition-all duration-300
                         ${isActive
-                          ? 'shadow-[0_10px_30px_rgb(59,130,246,0.15)] -translate-y-1'
-                          : 'hover:shadow-[0_10px_30px_rgb(59,130,246,0.15)] hover:-translate-y-1'
+                          ? 'shadow-[0_10px_30px_rgb(182,139,34,0.15)] -translate-y-1'
+                          : 'hover:shadow-[0_10px_30px_rgb(182,139,34,0.15)] hover:-translate-y-1'
                         }
                       `}
                       style={{
-                        background: 'linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%)'
+                        background: 'linear-gradient(180deg, #ffffff 0%, #FBF8EC 100%)'
                       }}
                     >
                       <div className={`
-                        text-4xl md:text-5xl font-bold text-blue-500 text-center mb-4
+                        text-4xl md:text-5xl font-bold text-primary-500 text-center mb-4
                         transition-transform duration-300
                         ${isActive ? 'scale-105' : 'group-hover:scale-105'}
                       `}>
@@ -168,13 +168,13 @@ export default function AboutPage() {
                       </div>
 
                       {/* Slider Dot on the bottom */}
-                      <div className="w-full h-1.5 bg-blue-100 rounded-full mt-1 relative overflow-hidden">
+                      <div className="w-full h-1.5 bg-primary-100 rounded-full mt-1 relative overflow-hidden">
                         <div className={`
-                          absolute top-0 left-1/2 -translate-x-1/2 h-full bg-blue-500 rounded-full transition-all duration-500 ease-out
+                          absolute top-0 left-1/2 -translate-x-1/2 h-full bg-primary-500 rounded-full transition-all duration-500 ease-out
                           ${isActive ? 'w-full' : 'w-8 group-hover:w-full'}
                         `} />
                         <div className={`
-                          absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full shadow-sm
+                          absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary-500 rounded-full shadow-sm
                           transition-transform duration-300
                           ${isActive ? 'scale-110' : 'group-hover:scale-110'}
                         `} />
@@ -216,36 +216,33 @@ export default function AboutPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: 'url(/images/team-photo.jpg)',
-              backgroundPosition: 'center 30%',
+              backgroundImage: 'url(/images/royal/about-cables.jpg)',
+              backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
           />
-          {/* Blue overlay for better text readability and theme consistency */}
-          <div className="absolute inset-0 bg-primary-700/60" />
+          {/* Gold overlay for better text readability and theme consistency */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-primary-900/90 to-gray-950/80" />
 
           {/* Content */}
           <div className="relative z-10 px-4 py-8 sm:p-10 md:p-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">Our Story</h2>
             <div className="prose prose-lg max-w-none space-y-3 md:space-y-4">
               <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                Founded in 2018, MEGA Enterprise began with a simple vision: to provide reliable, high-quality
-                industrial materials to businesses across India. What started as a small operation in Navi Mumbai
-                has grown into a trusted name in industrial supply, serving some of the country's largest
-                infrastructure companies.
+                Incorporated in 2000, Royal Electricals &amp; Hardware is a supplier, trader, and distributor
+                of electrical and hardware products based in Taloja MIDC. We bring together a wide product
+                range from established brands to help customers source the essentials for their projects.
               </p>
               <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                Today, we're proud to be a GeM-approved supplier, authorized dealer for 20+ leading brands, and
-                the preferred material partner for government PSUs and private enterprises alike. Our commitment
-                to quality, reliability, and customer service has earned us partnerships with industry giants like
-                TATA Projects, Afcons Infrastructure, and L&T.
+                Our long-standing vendor relationships include Siemens, L&amp;T, Havells, Standard Electricals,
+                Anchor/Roma, Usha, Bajaj, Polycab, Syska, Osram, and Berger. Working closely with our suppliers
+                helps us respond to varied requirements and arrange dependable product supply.
               </p>
               <p className="text-white/90 text-base md:text-lg leading-relaxed">
-                With a catalog of 1000+ products spanning electrical materials, safety equipment, LED lighting,
-                pipes, fittings, and more, we're equipped to handle projects of any scale. Our team of experienced
-                professionals ensures seamless procurement, timely delivery, and comprehensive support throughout
-                your project lifecycle.
+                Competitive pricing, a strong distribution network, warehouse capacity, and timely delivery
+                are central to the way we work. Our quality-focused approach and clear business dealings
+                help us build lasting customer relationships, with 50+ clients and 1000+ products in our range.
               </p>
             </div>
           </div>
@@ -277,7 +274,7 @@ export default function AboutPage() {
                 Ready to Partner With Us?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Join 50+ major companies who trust MEGA Enterprise for their material needs
+                Join 50+ major companies who trust Royal Electricals & Hardware for their material needs
               </p>
               <a
                 href="/contact"

@@ -11,6 +11,6 @@ const products = [
 
 export default function WaterproofingPage() {
     return (
-        <ProductListing title="Waterproofing" description="Complete waterproofing solutions for buildings, terraces, basements, and wet areas using advanced polymer, bituminous, and cementitious technologies." benefits={['10+ Year Life', 'Crack Bridging', 'Eco-Friendly Options', 'Expert Application Support']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Waterproofing" description="Complete waterproofing solutions for buildings, terraces, basements, and wet areas using advanced polymer, bituminous, and cementitious technologies." benefits={['10+ Year Life', 'Crack Bridging', 'Eco-Friendly Options', 'Product Selection']} products={products} categoryBackLink="/products" />
     );
 }

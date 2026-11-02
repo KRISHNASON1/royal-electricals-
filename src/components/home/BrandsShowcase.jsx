@@ -6,16 +6,17 @@ const BrandsShowcase = () => {
   const animationDuration = 30;
 
   const brands = [
-    { name: 'Siemens', logo: '/images/brands/download.png' },
-    { name: 'Polycab', logo: '/images/brands/polycab-logo-freelogovectors.net_.png' },
-    { name: 'Ledvance', logo: '/images/brands/images.png' },
-    { name: 'Berger Paints', logo: '/images/brands/images (1).png' },
-    { name: 'Shalimar Paints', logo: '/images/brands/113154.Shalimar-Paints-Paves-The-Way-For-A-New-Era-Wit.jpg' },
-    { name: 'Usha International', logo: '/images/brands/USHA_Logo.pdf.jpg' },
-    { name: 'Europa Locks', logo: '/images/brands/europalocks_logo.png' },
-    { name: 'Udyogi Safety', logo: '/images/brands/images (2).png' },
-    { name: 'British Paints', logo: '/images/brands/images (3).png' },
-    { name: 'Link Locks', logo: '/images/brands/999954.jpg' },
+    { name: 'Siemens', logo: '/images/royal/brands/Siemens-logo.png' },
+    { name: 'L&T', logo: '/images/royal/brands/landt_logo.png' },
+    { name: 'Havells', logo: '/images/royal/brands/HAVELLS.png' },
+    { name: 'Standard Electricals', logo: null },
+    { name: 'Anchor/Roma', logo: '/images/royal/brands/anchor.png' },
+    { name: 'Usha', logo: '/images/royal/brands/usha.png' },
+    { name: 'Bajaj', logo: '/images/royal/brands/bajaj.png' },
+    { name: 'Polycab', logo: '/images/royal/brands/polycab.png' },
+    { name: 'Syska', logo: '/images/royal/brands/syska.png' },
+    { name: 'Osram', logo: '/images/royal/brands/Osram_Logo.png' },
+    { name: 'Berger', logo: '/images/royal/brands/berger.png' },
   ];
 
   return (
@@ -41,7 +42,7 @@ const BrandsShowcase = () => {
         }
       `}</style>
 
-      <section className="py-[66px] md:py-24 flex items-center">
+      <section id="brands" className="py-[66px] md:py-24 flex items-center scroll-mt-28">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -60,11 +61,7 @@ const BrandsShowcase = () => {
                   className="flex-shrink-0 w-28 sm:w-36 md:w-40 h-16 sm:h-18 md:h-20 bg-white border border-gray-200 rounded-xl shadow-lg flex items-center justify-center p-1 mx-2 sm:mx-4 md:mx-6"
                   style={{ minWidth: '112px' }}
                 >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="w-full h-full object-contain scale-110"
-                  />
+                  {brand.logo ? <img src={brand.logo} alt={brand.name} className="w-full h-full object-contain scale-110" /> : <span className="text-center text-secondary-600 font-bold text-lg leading-tight px-2">Standard<br /><span className="text-xs uppercase tracking-widest">Electricals</span></span>}
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
@@ -74,11 +71,7 @@ const BrandsShowcase = () => {
                   className="flex-shrink-0 w-28 sm:w-36 md:w-40 h-16 sm:h-18 md:h-20 bg-white border border-gray-200 rounded-xl shadow-lg flex items-center justify-center p-1 mx-2 sm:mx-4 md:mx-6"
                   style={{ minWidth: '112px' }}
                 >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="w-full h-full object-contain scale-110"
-                  />
+                  {brand.logo ? <img src={brand.logo} alt={brand.name} className="w-full h-full object-contain scale-110" /> : <span className="text-center text-secondary-600 font-bold text-lg leading-tight px-2">Standard<br /><span className="text-xs uppercase tracking-widest">Electricals</span></span>}
                 </div>
               ))}
             </div>
@@ -87,7 +80,7 @@ const BrandsShowcase = () => {
           {/* Additional Info */}
           <div className="mt-12 text-center">
             <Link href="/about" className="text-primary-600 font-medium hover:underline inline-block">
-              + 20 more authorized partnerships
+              Explore the brands behind Royal's product range
             </Link>
           </div>
         </div>

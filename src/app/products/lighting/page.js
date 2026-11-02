@@ -9,7 +9,7 @@ export default function LightingPage() {
             name: 'LED Lights',
             description: 'Energy-efficient LED bulbs, tubes, and panels for general lighting.',
             icon: <Lightbulb className="w-8 h-8" />,
-            color: 'from-yellow-400 to-yellow-600',
+            color: 'from-primary-400 to-primary-600',
             href: '/products/lighting/led-lights',
         },
         {
@@ -23,21 +23,21 @@ export default function LightingPage() {
             name: 'Street Lighting',
             description: 'Outdoor street lights and area lighting fixtures.',
             icon: <Sun className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/lighting/street-lighting',
         },
         {
             name: 'Commercial Lighting',
             description: 'Office, retail, and hospitality lighting solutions.',
             icon: <Building className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/lighting/commercial-lighting',
         },
         {
             name: 'Emergency Lighting',
             description: 'Exit signs, emergency lights, and battery backup systems.',
             icon: <Flashlight className="w-8 h-8" />,
-            color: 'from-red-500 to-red-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/lighting/emergency-lighting',
         },
     ];
@@ -54,7 +54,7 @@ export default function LightingPage() {
                 </div>
 
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-400 to-primary-500 rounded-3xl mb-6 shadow-lg">
                         <Lightbulb className="w-10 h-10 text-white" />
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -97,17 +97,17 @@ export default function LightingPage() {
                 </div>
 
                 <div className="text-center">
-                    <div className="bg-gradient-to-br from-yellow-500 to-amber-600 rounded-3xl p-12 text-white">
+                    <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Need Lighting Design Support?</h2>
-                        <p className="text-yellow-100 mb-8 max-w-2xl mx-auto">
+                        <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
                             Our lighting experts can help you with lux calculations, product selection, and energy-efficient solutions.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-yellow-700 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                            <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 rounded-full font-semibold hover:bg-gray-100 transition-all">
                                 <ArrowLeft className="w-5 h-5 mr-2" />
                                 All Products
                             </Link>
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-yellow-600 text-white rounded-full font-semibold hover:bg-yellow-700 transition-all border border-yellow-400">
+                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all border border-primary-400">
                                 Get Lighting Design
                             </Link>
                         </div>

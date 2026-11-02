@@ -16,21 +16,21 @@ export default function GearboxesPage() {
             name: 'Helical Gearbox',
             description: 'Inline helical gear reducers for high efficiency and smooth operation.',
             icon: <Settings className="w-8 h-8" />,
-            color: 'from-blue-500 to-blue-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/gearboxes/helical-gearbox',
         },
         {
             name: 'Bevel Helical Gearbox',
             description: 'Right-angle bevel-helical gear units for heavy-duty applications.',
             icon: <RotateCcw className="w-8 h-8" />,
-            color: 'from-green-500 to-green-700',
+            color: 'from-primary-500 to-primary-700',
             href: '/products/gearboxes/bevel-helical-gearbox',
         },
         {
             name: 'Planetary Gearbox',
             description: 'High power density planetary gear reducers for precision applications.',
             icon: <Box className="w-8 h-8" />,
-            color: 'from-purple-500 to-purple-700',
+            color: 'from-secondary-500 to-secondary-700',
             href: '/products/gearboxes/planetary-gearbox',
         },
     ];
@@ -92,7 +92,7 @@ export default function GearboxesPage() {
                     <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-12 text-white">
                         <h2 className="text-3xl font-bold mb-4">Need Gearbox Selection Support?</h2>
                         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                            Our engineers can help you select the right gearbox based on torque, speed, service factor, and mounting requirements.
+                            Share the torque, speed, and mounting requirements with our sales team to request a suitable gearbox and quotation.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-all">

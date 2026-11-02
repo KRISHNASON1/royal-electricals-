@@ -2,14 +2,14 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "MEGA Enterprise",
-    "url": "https://megaenterprise.in",
-    "logo": "https://megaenterprise.in/logo.png",
-    "description": "Authorized supplier of electrical, safety & industrial materials. GeM approved vendor serving major clients across India.",
+    "name": "Royal Electricals & Hardware",
+    "url": "https://www.royalelectrical.in",
+    "logo": "https://www.royalelectrical.in/royal-crown-transparent.png",
+    "description": "Electrical and hardware supplier, trader, and distributor in Taloja MIDC, established in 2000.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Plot No. 57, Opp M.I.D.C Water Tank, TALOJA",
-      "addressLocality": "Navi Mumbai",
+      "streetAddress": "Plot No. PAP 57, Opposite M.I.D.C. Water Tank, Taloja MIDC",
+      "addressLocality": "Taloja MIDC, Raigad",
       "addressRegion": "Maharashtra",
       "postalCode": "410208",
       "addressCountry": "IN"
@@ -17,16 +17,16 @@ export function OrganizationSchema() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+91-7506070157",
+        "telephone": "+91-8591169113",
         "contactType": "sales",
-        "email": "nirmal@megaenterprise.in",
+        "email": "royalelectrical_taloja@rediffmail.com",
         "availableLanguage": ["English", "Hindi"]
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+91-8591169113",
-        "contactType": "customer service",
-        "email": "kailash@megaenterprise.in"
+        "telephone": "+91-22-27401969",
+        "contactType": "office",
+        "email": "royalelectrical_taloja@rediffmail.com"
       }
     ]
   };
@@ -44,11 +44,11 @@ export function ProductSchema({ name, description, image, brand }) {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": name,
-    "image": image || "https://megaenterprise.in/logo.png",
+    "image": image || "https://www.royalelectrical.in/royal-crown-transparent.png",
     "description": description,
     "brand": {
       "@type": "Brand",
-      "name": brand || "MEGA Enterprise"
+      "name": brand || "Royal Electricals & Hardware"
     }
   };
 
@@ -84,12 +84,12 @@ export function SpeakableSchema() {
   const schema = {
     "@context": "https://schema.org/",
     "@type": "WebPage",
-    "name": "MEGA Enterprise Industrial Supplier",
+    "name": "Royal Electricals & Hardware Industrial Supplier",
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": ["#hero-headline", "#about-snippet"]
     },
-    "url": "https://megaenterprise.in"
+    "url": "https://www.royalelectrical.in"
   };
 
   return (
@@ -104,13 +104,13 @@ export function SiteLinksSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "MEGA Enterprise",
-    "url": "https://megaenterprise.in",
+    "name": "Royal Electricals & Hardware",
+    "url": "https://www.royalelectrical.in",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://megaenterprise.in/products?search={search_term_string}"
+        "urlTemplate": "https://www.royalelectrical.in/products?search={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

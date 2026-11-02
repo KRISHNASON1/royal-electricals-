@@ -69,7 +69,7 @@ const ContactForm = ({ initialRequirements = '' }) => {
         <div className="text-center mb-8">
           <h3 className="text-3xl font-bold text-gray-900 mb-2">Get a Quote Today</h3>
           <p className="text-gray-600">
-            Submit your requirement and our team will respond within 24 hours
+            Send your requirement to Royal Electricals &amp; Hardware. Our team will respond within 24 hours.
           </p>
         </div>
 
@@ -226,7 +226,7 @@ const ContactForm = ({ initialRequirements = '' }) => {
           {submitStatus === 'success' && (
             <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-4 rounded-lg">
               <CheckCircle className="w-5 h-5" />
-              <span className="font-medium">Thank you! We'll contact you within 24 hours.</span>
+              <span className="font-medium">Thank you for contacting Royal Electricals &amp; Hardware! We'll respond within 24 hours.</span>
             </div>
           )}
 

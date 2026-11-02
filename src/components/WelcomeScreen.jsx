@@ -71,7 +71,7 @@ export default function WelcomeScreen() {
             className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-opacity duration-800 ease-out ${isFading ? 'opacity-0 pointer-events-none' : 'opacity-100'
                 }`}
             style={{
-                background: 'linear-gradient(135deg, #f0f8ff 0%, #e8f4fc 25%, #ffffff 50%, #e6f3fa 75%, #f5fafd 100%)',
+                background: 'linear-gradient(135deg, #FBF8EC 0%, #F8F1D8 25%, #ffffff 50%, #FBEAE8 75%, #FDF3F2 100%)',
             }}
         >
             {/* Subtle animated background elements */}
@@ -79,14 +79,14 @@ export default function WelcomeScreen() {
                 <div
                     className="absolute -top-1/2 -left-1/2 w-full h-full opacity-30 animate-pulse"
                     style={{
-                        background: 'radial-gradient(circle at center, #7AB2D3 0%, transparent 70%)',
+                        background: 'radial-gradient(circle at center, #B68B22 0%, transparent 70%)',
                         animationDuration: '3s',
                     }}
                 />
                 <div
                     className="absolute -bottom-1/2 -right-1/2 w-full h-full opacity-20 animate-pulse"
                     style={{
-                        background: 'radial-gradient(circle at center, #4A628A 0%, transparent 70%)',
+                        background: 'radial-gradient(circle at center, #C8423D 0%, transparent 70%)',
                         animationDuration: '4s',
                         animationDelay: '1s',
                     }}
@@ -100,28 +100,28 @@ export default function WelcomeScreen() {
                     <div
                         className="absolute inset-0 blur-2xl opacity-40"
                         style={{
-                            background: 'radial-gradient(circle, #7AB2D3 0%, transparent 70%)',
+                            background: 'radial-gradient(circle, #B68B22 0%, transparent 70%)',
                         }}
                     />
                     <Image
-                        src="/logo.png"
-                        alt="MEGA Enterprise Logo"
-                        width={180}
-                        height={180}
-                        className="relative z-10 drop-shadow-xl"
+                        src="/royal-crown-transparent.png"
+                        alt="Royal Electricals & Hardware Logo"
+                        width={1448}
+                        height={1086}
+                        className="relative z-10 drop-shadow-xl w-40 sm:w-52 h-auto"
                         priority
                     />
                 </div>
 
                 {/* Company Name */}
-                <h1 className="text-4xl md:text-5xl font-bold tracking-wide animate-text-entrance">
+                <h1 className="text-xl md:text-3xl font-bold tracking-wide animate-text-entrance text-center px-6">
                     <span
                         className="bg-clip-text text-transparent"
                         style={{
-                            backgroundImage: 'linear-gradient(135deg, #4A628A 0%, #7AB2D3 50%, #4A628A 100%)',
+                            backgroundImage: 'linear-gradient(135deg, #C8423D 0%, #B68B22 50%, #C8423D 100%)',
                         }}
                     >
-                        MEGA Enterprise
+                        Royal Electricals & Hardware
                     </span>
                 </h1>
 
@@ -130,21 +130,21 @@ export default function WelcomeScreen() {
                     <div
                         className="w-2 h-2 rounded-full animate-bounce"
                         style={{
-                            backgroundColor: '#7AB2D3',
+                            backgroundColor: '#B68B22',
                             animationDelay: '0ms',
                         }}
                     />
                     <div
                         className="w-2 h-2 rounded-full animate-bounce"
                         style={{
-                            backgroundColor: '#7AB2D3',
+                            backgroundColor: '#B68B22',
                             animationDelay: '150ms',
                         }}
                     />
                     <div
                         className="w-2 h-2 rounded-full animate-bounce"
                         style={{
-                            backgroundColor: '#7AB2D3',
+                            backgroundColor: '#B68B22',
                             animationDelay: '300ms',
                         }}
                     />

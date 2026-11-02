@@ -11,6 +11,6 @@ const products = [
 
 export default function TowerCranesPage() {
     return (
-        <ProductListing title="Tower Cranes & Hoists" description="Lifting equipment including tower cranes, mobile cranes, hoists, and pulley blocks for construction and industrial projects." benefits={['All Capacities', 'Rental Available', 'Safety Certified', 'Erection Support']} products={products} categoryBackLink="/products" />
+        <ProductListing title="Tower Cranes & Hoists" description="Lifting equipment including tower cranes, mobile cranes, hoists, and pulley blocks for construction and industrial projects." benefits={['All Capacities', 'Bulk Supply', 'Safety Certified', 'Product Specifications']} products={products} categoryBackLink="/products" />
     );
 }

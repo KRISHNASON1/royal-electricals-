@@ -16,10 +16,9 @@ const Hero = () => {
 
   // Array of images to cycle through - place your images in public/images/hero/
   const heroImages = [
-    { src: '/images/hero/1.png', alt: 'Premium industrial materials and electrical components for MEGA Enterprise projects' },
-    { src: '/images/hero/2.png', alt: 'GeM approved heavy structural steel and engineering supplies' },
+    { src: '/images/hero/1.png', alt: 'Premium industrial materials and electrical components for Royal Electricals & Hardware projects' },
+    { src: '/images/hero/2.png', alt: 'Structural steel and engineering supplies from Royal Electricals & Hardware' },
     { src: '/images/hero/3.png', alt: 'High quality safety PPE kits and factory automation equipment' },
-    { src: '/images/hero/4.png', alt: 'Specialized industrial fabrication tools and power machinery' },
   ];
 
   useEffect(() => {
@@ -165,7 +164,7 @@ const Hero = () => {
       {/* Animated Background Elements — hidden on mobile for performance */}
       <div className="absolute inset-0 overflow-hidden hidden md:block">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-secondary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-primary-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style={{ animationDelay: '4s' }}></div>
 
         {/* Floating Wavy Lines */}
@@ -178,7 +177,7 @@ const Hero = () => {
             strokeWidth="0.2"
           />
           <path
-            className="wavy-line-2 text-primary-100/40"
+            className="wavy-line-2 text-secondary-200/40"
             d="M0,100 C40,90 60,60 100,20"
             fill="none"
             stroke="currentColor"
@@ -196,13 +195,13 @@ const Hero = () => {
             <h1
               id="hero-headline"
               ref={titleRef}
-              className="text-5xl md:text-7xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-bold mb-6 leading-[1.08] tracking-tight"
             >
               <span className="bg-gradient-to-r from-primary-700 via-primary-600 to-primary-500 bg-clip-text text-transparent">
-                Premium Project Materials
+                Electrical &amp; Hardware Solutions
               </span>
               <br />
-              <span className="text-gray-900">Delivered</span>
+              <span className="text-secondary-600">Since 2000.</span>
             </h1>
 
             {/* Subtitle */}
@@ -210,16 +209,16 @@ const Hero = () => {
               ref={subtitleRef}
               className="text-xl md:text-2xl text-gray-600 mb-0 md:mb-12 max-w-3xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Your trusted partner in industrial & project materials.
-              <span className="font-semibold text-primary-700"> 8+ years of excellence</span>,
-              serving <span className="font-semibold text-primary-700">50+ major clients</span> across India.
+              Your trusted supplier and distributor of electrical and hardware essentials.
+              Serving <span className="font-semibold text-primary-700">50+ clients</span> with
+              <span className="font-semibold text-primary-700"> 1000+ products</span> from leading brands.
             </p>
 
             {/* CTAs */}
             <div ref={ctaRef} className="hidden md:flex flex-col sm:flex-row items-center lg:items-start lg:justify-start justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Link
                 href="/contact"
-                className="group px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center space-x-2"
+                className="group px-8 py-4 bg-gradient-to-r from-secondary-500 to-secondary-700 text-white rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center space-x-2"
               >
                 <span>Request Quote</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -234,11 +233,11 @@ const Hero = () => {
             </div>
 
             {/* Stats with Glass Effect */}
-            <div className="mt-16 hidden lg:grid grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="mt-10 lg:mt-16 grid grid-cols-3 gap-3">
               {[
-                { value: '50+', label: 'Major Clients' },
+                { value: '50+', label: 'Clients' },
                 { value: '1000+', label: 'Products' },
-                { value: 'GeM', label: 'Approved Vendor' },
+                { value: '2000', label: 'Established' },
               ].map((stat, index) => (
                 <div key={index} className="glass-float">
                   <div className="relative h-20 lg:h-24 rounded-xl backdrop-blur-xl bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/30 shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
@@ -263,7 +262,7 @@ const Hero = () => {
             <div className="relative w-full h-[300px] lg:h-[600px]">
               {/* Decorative Elements — hidden on mobile */}
               <div className="hidden md:block absolute -top-4 -right-4 w-72 h-72 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-              <div className="hidden md:block absolute -bottom-4 -left-4 w-72 h-72 bg-primary-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="hidden md:block absolute -bottom-4 -left-4 w-72 h-72 bg-secondary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
               {/* Image Container with Stacked Effect */}
               <div className="relative w-full h-full flex items-center justify-center">
